@@ -1,3 +1,3 @@
 <?php
-    echo "first commit";
+    $voiture = array ('bmw','hyundai','kia');
 ?>
