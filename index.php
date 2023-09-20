@@ -1,12 +1,7 @@
 <?php
-    $voiture = array ('bmw','hyundai','kia');
+    $voiture = ['bmw','hyundai','kia','honda'];
 
-    $recette = [
-        'titre' => 'ravitoto',
-        'etape' => 'etape 1: andrahona',
-        'auteur' => 'mahery',
-        'bool' => true,
-    ];
-
-?>
+    for($var = 0; $var<=3; $var++){
+        echo $voiture[$var] ."<br/>";
+    }
 ?>
