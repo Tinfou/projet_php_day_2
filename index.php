@@ -1,15 +1,22 @@
 <?php
-    $voiture = ['bmw','hyundai','kia','honda'];
+    $etudiant = [
+        [
+            'nom' => 'mahery',
+            'note' => '12',
+            'validation' => true,
+        ],
 
-    for($var = 0; $var<=3; $var++){
-        echo $voiture[$var] ."<br/>";
-    }
-    if(in_array('hasina', $voiture)){
+        [
+            'nom' => 'hasina',
+            'note' => '9',
+            'validation' => false,
+        ],
 
-        echo 'la clé  se trouve dans le tableau';
-    }
-    else{
+        [
+            'nom' => 'stelly',
+            'note' => '18',
+            'validation' => true,
+        ],
+    ];
 
-        echo 'la clé ne se trouve pas dans le tableau';
-    }
 ?>
