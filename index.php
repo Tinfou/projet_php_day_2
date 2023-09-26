@@ -7,18 +7,10 @@
 </form>
 
 <?php
-//$note = isset($_POST['note']);
-    if(isset($note)){
+
+    if (isset($_POST['note'])){
         $note = $_POST['note'];
     }
-function resultat($note){
-    if($note>=10){
-        echo " <br> Admis";
-    }
-    else{
-        echo " <br> Non admis";
-    }
-}
     if(isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['note'])){
         echo "Voici votre resultat";
         echo " <br> Nom : ".$_POST['nom']."<br>";
@@ -28,5 +20,13 @@ function resultat($note){
     }
     else{
         echo "Vide";
+    }
+    function resultat($note){
+        if($note>=10){
+            echo " <br> Admis";
+        }
+        else{
+            echo " <br> Non admis";
+        }
     }
 ?>
